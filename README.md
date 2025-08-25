@@ -1,47 +1,103 @@
-![BL HUD Preview](<img width="1873" height="1062" alt="image" src="https://github.com/user-attachments/assets/24e61472-268e-47ca-908c-de04e9142039" />
-)
 
+![BL HUD Preview](preview.png)
 
 # BL HUD V1
 
-A sleek and modern in-game HUD for FiveM, supporting ESX, QBCore, and standalone setups.
+A sleek and modern HUD for FiveM, supporting ESX, QBCore, and standalone frameworks.
+Includes circular indicators for player stats, banking integration, and speed display.
 
-## Features
+---
 
-- Clean circular HUD with health, armor, hunger, and thirst indicators
-- Displays cash, bank balance, and speedometer
-- Auto refreshes on player spawn/login
-- Admin command `/adminheal` to refill needs
-- Optional support for `okokBanking`, `qs-banking`, and `ox_inventory`
-- Fully integrated with `bl_lib` for shared utility functions
-- MIT Licensed and ready for public use
+✨ **Features**
 
-## Requirements
+- Framework Compatibility: ESX, QBCore, Standalone
+- Inventory Compatibility: ox_inventory, qs-inventory, qb-inventory
+- Status Circles: Health, Armor, Hunger, Thirst
+- Banking Display: Cash & Bank (okokBanking, qs-banking, ox support)
+- Speedometer: Bottom-right minimalist display
+- Auto Refresh: HUD loads on spawn/login automatically
+- Admin Tools: `/adminheal` command to refill needs
+- Keybind Support: Toggle HUD with F10
+- Customizable: Icons, layout, styles, and status polling
+- `bl_lib` Integration: Uses shared BL library utilities
 
-- [bl_lib](https://github.com/yourusername/bl_lib) – Shared utility library used across BL scripts
-- ESX or QBCore framework (or run standalone with limited features)
+---
 
-## Installation
+📦 **Installation**
 
-1. Clone or download this repo:
-   ```bash
-   git clone https://github.com/yourusername/bl_hud_v1.git
-   ```
+### 1. Download the Resource
 
-2. Add to your `server.cfg`:
-   ```
-   ensure bl_lib
-   ensure bl_hud_v1
-   ```
+Clone or download the latest release:
 
-3. Optional: Modify framework settings or icons in the config if needed.
+```bash
+git clone https://github.com/yourusername/bl_hud_v1.git
+```
 
-## Configuration
+### 2. Install Required Dependency
 
-- You can modify the visual HUD by editing `html/style.css`
-- Icons are located in `html/icons/` and use `.svg` format
-- To toggle the HUD in-game, press **F10**
+This script requires `bl_lib`.
 
-## License
+- Download or clone `bl_lib`
+- Place it in your `resources/[bl]` folder
+- Add to `server.cfg` before starting this HUD:
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+```bash
+ensure bl_lib
+ensure bl_hud_v1
+```
+
+---
+
+⚙️ **Configuration**
+
+Edit `config/config.lua`:
+
+```lua
+Config.Framework = "qbcore" -- qbcore, esx, or standalone
+Config.Inventory = "ox"     -- ox, qb, or qs
+```
+
+Additional configuration:
+
+- Customize circle positions in `style.css`
+- Add or replace icons in `html/icons/`
+
+---
+
+🛠️ **Usage**
+
+- `/adminheal` — Refill hunger and thirst instantly
+
+---
+
+📄 **License**
+
+Licensed under the MIT License — free to use, modify, and share with credit.
+
+---
+
+💳 **Donations**
+
+Support development and future updates:
+
+- PayPal — BL SCRIPTS
+
+---
+
+📢 **Support**
+
+- Open a GitHub issue
+- Join our Discord: [discord.gg/9fuJWEGSmK]
+- Ask in the FiveM community forums
+
+---
+
+📜 **Changelog**
+
+### v1.0.0 (2025-08-25)
+
+- Initial release
+- Circular HUD with dynamic status indicators
+- Bank & cash display
+- Admin heal command
+- Multi-framework support
