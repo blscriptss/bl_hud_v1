@@ -14,10 +14,8 @@ Includes circular indicators for player stats, banking integration, and speed di
 - Inventory Compatibility: ox_inventory, qs-inventory, qb-inventory
 - Status Circles: Health, Armor, Hunger, Thirst
 - Banking Display: Cash & Bank (okokBanking, qs-banking, ox support)
-- Speedometer: Bottom-right minimalist display
 - Auto Refresh: HUD loads on spawn/login automatically
 - Admin Tools: `/adminheal` command to refill needs
-- Keybind Support: Toggle HUD with F10
 - Customizable: Icons, layout, styles, and status polling
 - `bl_lib` Integration: Uses shared BL library utilities
 
