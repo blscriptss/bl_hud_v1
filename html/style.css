@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.hud-container {
+    position: absolute;
+    bottom: 1.5%;
+    left: 2%;
+    display: flex;
+    gap: 14px;
+    z-index: 100;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+circle.bg {
+    fill: none;
+    stroke: #333;
+    stroke-width: 4;
+}
+circle.fg {
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s;
+}
+.icon-img {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+}
+
+.money-hud-container {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    gap: 14px;
+    z-index: 100;
+}
+
+.money-hud-container .circle {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.money-text {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.speedometer {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.speedometer .unit {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #ccc;
+}
+.speedometer {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.speedometer .unit {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #ccc;
+}
