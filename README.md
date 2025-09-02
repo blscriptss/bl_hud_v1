@@ -74,14 +74,6 @@ Licensed under the MIT License — free to use, modify, and share with credit.
 
 ---
 
-💳 **Donations**
-
-Support development and future updates:
-
-- PayPal — BL SCRIPTS
-
----
-
 📢 **Support**
 
 - Open a GitHub issue
