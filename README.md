@@ -28,7 +28,7 @@ Includes circular indicators for player stats, banking integration, and speed di
 Clone or download the latest release:
 
 ```bash
-git clone https://github.com/Bluey04/bl_hud_v1.git
+git clone https://github.com/blscriptss/bl_hud_v1.git
 ```
 
 ### 2. Install Required Dependency
