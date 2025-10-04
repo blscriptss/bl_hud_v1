@@ -21,7 +21,7 @@ CreateThread(function()
         minimapOffset = ((defaultAspectRatio - aspectRatio) / 3.6) - 0.008
     end
 
-    -- Minimap position (moved more right & up)
+    -- Minimap position
     SetMinimapComponentPosition("minimap", "L", "B", -0.010 + minimapOffset, -0.085, 0.1638, 0.183)
     SetMinimapComponentPosition("minimap_mask", "L", "B", -0.010 + minimapOffset, -0.038, 0.128, 0.20)
     SetMinimapComponentPosition("minimap_blur", "L", "B", -0.020 + minimapOffset, -0.013, 0.262, 0.300)
@@ -29,8 +29,8 @@ CreateThread(function()
 
     SetScriptGfxAlign(string.byte("L"), string.byte("B"))
 
-    -- Align parameters to match new position
+    -- Align parameters
     local xPos = -0.010 + minimapOffset
-    local yPos = 0.745 -- Lower Y value moves it higher
+    local yPos = 0.745 
     SetScriptGfxAlignParams(xPos, yPos, 0.0, 0.0)
 end)
