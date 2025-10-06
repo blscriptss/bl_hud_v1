@@ -3,7 +3,7 @@ local ESX, QBCore = nil, nil
 
 CreateThread(function()
     while not bl_lib do Wait(10) end
-    bl_lib.Notify('BL HUD Loaded', 'success')
+    bl_lib.Notify('HUD Loaded', 'success')
 end)
 local hunger, thirst = 100.0, 100.0
 
@@ -130,7 +130,7 @@ RegisterCommand("toggleblhud", function()
     SendNUIMessage({ type = "toggleHUD" })
 end, false)
 
-RegisterKeyMapping("toggleblhud", "Toggle BL HUD", "keyboard", "F10")
+RegisterKeyMapping("toggleblhud", "Toggle HUD", "keyboard", "F10")
 
 -- Auto-refresh HUD after player loads
 RegisterNetEvent('esx:playerLoaded', function()
