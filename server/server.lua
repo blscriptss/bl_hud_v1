@@ -1,6 +1,6 @@
 
 RegisterCommand("savehud", function(source, args, raw)
-    print("HUD settings saved (simulated).")
+    print("HUD settings saved")
 end, true)
 
 RegisterNetEvent("hud:setNeeds", function(hunger, thirst)
